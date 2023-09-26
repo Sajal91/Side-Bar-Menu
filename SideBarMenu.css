@@ -87,7 +87,6 @@ body {
     left: 0rem;
     background-color: rgb(255, 254, 254, 0.2);
     transition-duration: 0.3s;
-    /* transition-delay: 3s; */
 }
 
 #btn:checked {
@@ -101,7 +100,6 @@ body {
     left: 13.3rem;
     top: 3rem;
     transition-duration: 0.3s;
-    /* transition-delay: 3s; */
 }
 
 #btn_2:checked + .btn_2 + .container {
@@ -109,7 +107,6 @@ body {
     left: -30rem;
     top: 5.2rem;
     transition-duration: 0.3s;
-    /* transition-delay: 1s; */
 }
 
 .btn_2:hover {

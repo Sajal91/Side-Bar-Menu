@@ -39,20 +39,26 @@ body {
     padding-block: 2px;
 }
 
-.contents ul li {
+.contents div li {
     font-size: x-large;
-    margin-top: 2rem;
+    padding-block: 1rem;
 }
 
-.contents ul div:hover {
+.contents div:hover {
     cursor: pointer;
+    border: 2px solid grey;
 }
 
-.social-media-links ul li {
+.contents div {
+    margin-left: 0px;
+    padding-left: 1rem;
+}
+
+.social-media-links li {
     display: inline-block;
 }
 
-.social-media-links ul li{
+.social-media-links li{
     margin-top: 7rem;
     margin-right: 1.2rem;
 }
@@ -81,6 +87,7 @@ body {
     left: 0rem;
     background-color: rgb(255, 254, 254, 0.2);
     transition-duration: 0.3s;
+    /* transition-delay: 3s; */
 }
 
 #btn:checked {
@@ -94,13 +101,15 @@ body {
     left: 13.3rem;
     top: 3rem;
     transition-duration: 0.3s;
-    
+    /* transition-delay: 3s; */
 }
 
 #btn_2:checked + .btn_2 + .container {
     position: absolute;
     left: -30rem;
+    top: 5.2rem;
     transition-duration: 0.3s;
+    /* transition-delay: 1s; */
 }
 
 .btn_2:hover {
@@ -119,4 +128,14 @@ body {
 #btn_2:checked ~ .btn {
     position: absolute;
     left: 0px;
+}
+
+.social-media-links li:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+a {
+    color: azure;
+    text-decoration: none;
 }

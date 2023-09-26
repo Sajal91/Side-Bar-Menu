@@ -1,0 +1,122 @@
+body {
+    background-image: url('../IMAGES/camera.jpeg');
+    background-size: 300vh;
+}
+
+#bars {
+    cursor: pointer;
+}
+
+.container {
+    height: 41rem;
+    width: 15rem;
+    position: absolute;
+    left: -300rem;
+    background-color: rgb(255, 252, 252);
+    color: azure;
+    box-shadow: 0xp 0px 10px;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 5rem;
+    text-align: center;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+}
+
+.header>label>i:hover {
+    border: 3px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 70ms;
+    transition-delay: 0s;
+    transition-timing-function: ease-out;
+    padding-inline: 5px;
+    padding-block: 2px;
+}
+
+.contents ul li {
+    font-size: x-large;
+    margin-top: 2rem;
+}
+
+.contents ul div:hover {
+    cursor: pointer;
+}
+
+.social-media-links ul li {
+    display: inline-block;
+}
+
+.social-media-links ul li{
+    margin-top: 7rem;
+    margin-right: 1.2rem;
+}
+
+#btn {
+    position: absolute;
+    left: -10rem;
+}
+
+.btn_2 {
+    position: absolute;
+    left: -200rem;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: aliceblue;
+}
+
+#btn_2 {
+    position: absolute;
+    left: -200rem;
+}
+
+#btn:checked + .btn + input + .btn_2 + .container {
+    position: absolute;
+    top: 5.2rem;
+    left: 0rem;
+    background-color: rgb(255, 254, 254, 0.2);
+    transition-duration: 0.3s;
+}
+
+#btn:checked {
+    position: absolute;
+    left: -30rem;
+    transition-duration: 0.3s;
+}
+
+#btn:checked + .btn + input + .btn_2 {
+    position: absolute;
+    left: 13.3rem;
+    top: 3rem;
+    transition-duration: 0.3s;
+    
+}
+
+#btn_2:checked + .btn_2 + .container {
+    position: absolute;
+    left: -30rem;
+    transition-duration: 0.3s;
+}
+
+.btn_2:hover {
+    cursor: pointer;
+}
+
+.btn {
+    color: aliceblue;
+}
+
+#btn:checked + .btn {
+    position: absolute;
+    left: -50rem;
+}
+
+#btn_2:checked ~ .btn {
+    position: absolute;
+    left: 0px;
+}
